@@ -9,7 +9,10 @@ int main(){
     t1 = clock();
     for(int i = 0; i < x; i++){
         t1 = clock();
-        algoritmoDemorado(200);
+//Algumas chamadas com diferentes valores para comparar o tempo de execução.
+//      algoritmoDemorado(10);
+        algoritmoDemorado(100);
+//      algoritmoDemorado(200);
         t1 = clock() - t1;
         soma += t1;
     }
