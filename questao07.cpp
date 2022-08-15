@@ -13,6 +13,7 @@ int main(){
 float raiz(float x, float x0, float e){
     float ea = abs(pow(x0, 2) - x);
     if(ea <= e){
+// Se o chute inicial do usuário for o valor exato da raíz na margem de erro, o programa retornará esse chute inical.
         return x0;
     } else{
         float x_new = (pow(x0,2) + x)/(2*x0);
